@@ -12,7 +12,7 @@ function App() {
         {checkList.map(check => {
           return (
             <div>
-
+              {check}
             </div>
           );
         })}
