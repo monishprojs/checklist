@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
 import './App.css';
+import CheckList from './components/checkList';
 
 function App() {
   const [checkList, setList] = useState([]);
   return (
     <div>
-      <div>
+      <div className="title">
         <p>Hello World</p>
       </div>
       <div>
-        {checkList.map(check => {
-          return (
-            <div>
-              {check}
-            </div>
-          );
-        })}
+        <CheckList></CheckList>
       </div>
     </div>
   );
