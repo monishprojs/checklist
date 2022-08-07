@@ -3,7 +3,7 @@ import './checkList.css';
 
 
 function CheckList() {
-    const [checkList, setList] = useState(['']);
+    const [checkList, setList] = useState(['Follow Me on GitHub']);
     const [dates, setDates] = useState([''])
 
     function enter(key: any) {
@@ -19,19 +19,26 @@ function CheckList() {
             setList(checkList => [...checkList, item]);
         }
     }
+
+    function removeList(id: number) {
+
+    }
+
     return (
         <div>
             <div className="functions">
                 <input type="text" id="add" className="subject" onKeyDown={enter} />
                 &nbsp;
-                <button onClick={addList} className="submit">Submit</button>
+                <button onClick={addList} className="submit">Add</button>
             </div>
             <div className="list">
                 <p>Items:</p>
-                {checkList.map(check => {
+                {checkList.map((check, index) => {
                     return (
                         <div>
                             {check}
+                            &nbsp;
+                            <button className="remove" onKeyDown={() => removeList(index)}>x</button>
                         </div>
                     );
                 })}

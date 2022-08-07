@@ -18,3 +18,9 @@
     width: 5rem;
     height: 2rem;
 }
+
+.remove {
+    color: red;
+    background: none;
+    border: none;
+}
