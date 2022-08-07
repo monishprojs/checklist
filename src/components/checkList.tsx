@@ -20,9 +20,8 @@ function CheckList() {
         }
     }
 
-    function removeList(id: number) {
-        let list = checkList;
-        delete list[id];
+    function removeList(index: number) {
+        setList(checkList => [...checkList.slice(index)]);
     }
 
     return (
@@ -39,7 +38,7 @@ function CheckList() {
                         <div>
                             {check}
                             &nbsp;
-                            <button className="remove" onKeyDown={() => removeList(index)}>x</button>
+                            <button className="remove" onClick={() => removeList(index)}>x</button>
                         </div>
                     );
                 })}
