@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { createDocumentRegistry } from 'typescript';
 import './checkList.css';
 
 
@@ -15,8 +14,8 @@ function CheckList() {
     return (
         <div>
             <div className="functions">
-                <input type="text" id="add" />
-                <button onClick={addList}></button>
+                <input type="text" id="add" className="subject" />
+                <button onClick={addList} className="submit">Submit</button>
             </div>
             <div className="list">
                 {checkList.map(check => {

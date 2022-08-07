@@ -3,11 +3,10 @@ import './App.css';
 import CheckList from './components/checkList';
 
 function App() {
-  const [checkList, setList] = useState([]);
   return (
     <div>
       <div className="title">
-        <p>Hello World</p>
+        <p>Your Personalized Checklist</p>
       </div>
       <div>
         <CheckList></CheckList>

@@ -5,3 +5,16 @@
 .list {
     text-align: center;
 }
+
+.subject {
+    width: 10rem;
+    height: 2rem;
+}
+
+.submit {
+    color: white;
+    background-color: rgb(97, 219, 251);
+    border-radius: 80px;
+    width: 5rem;
+    height: 2rem;
+}
