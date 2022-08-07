@@ -21,7 +21,8 @@ function CheckList() {
     }
 
     function removeList(id: number) {
-
+        let list = checkList;
+        delete list[id];
     }
 
     return (

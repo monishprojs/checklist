@@ -24,3 +24,7 @@
     background: none;
     border: none;
 }
+
+.remove:hover {
+    color: aqua;
+}
