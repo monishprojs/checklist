@@ -5,4 +5,11 @@ body {
 
 .title {
     text-align: center;
+    font-size: 3rem;
+}
+
+.divider {
+    height: 0.2rem;
+    color: black;
+    background-color: black;
 }

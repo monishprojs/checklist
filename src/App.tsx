@@ -7,6 +7,7 @@ function App() {
     <div>
       <div className="title">
         <p>Your Personalized Checklist</p>
+        <hr className="divider" />
       </div>
       <div>
         <CheckList></CheckList>

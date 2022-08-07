@@ -9,6 +9,7 @@
 .subject {
     width: 10rem;
     height: 2rem;
+    border-radius: 30px;
 }
 
 .submit {
@@ -19,6 +20,10 @@
     height: 2rem;
 }
 
+.submit:hover {
+    background-color: darkslateblue;
+}
+
 .remove {
     color: red;
     background: none;
@@ -26,5 +31,5 @@
 }
 
 .remove:hover {
-    color: aqua;
+    color: darkslateblue;
 }
