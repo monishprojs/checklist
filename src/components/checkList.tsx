@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import './checkList.css';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -20,7 +20,7 @@ function CheckList() {
         if (addBox != null && dateBox != null) {
             let msg = addBox.value;
             let time = dateBox.value;
-            if (msg != "") {
+            if (msg !== "") {
                 setList(checkList => [...checkList, { message: msg, date: time }]);
             }
         }
