@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './checkList.css';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+
 
 
 function CheckList() {
@@ -32,18 +35,20 @@ function CheckList() {
     return (
         <div>
             <div className="functions">
-                <input type="text" id="add" className="subject" onKeyDown={enter} />
+                <TextField type="text" id="add" variant="filled" label="Event" className="subject" onKeyDown={enter} />
                 &nbsp;
-                <input type="text" id="date" className="subject" onKeyDown={enter} />
+                <TextField type="text" id="date" variant="filled" label="Date" className="subject" onKeyDown={enter} />
                 &nbsp;
-                <button onClick={addList} className="submit">Add</button>
+                <Button variant="contained" onClick={addList} className="submit">Add</Button>
             </div>
             <div className="list">
-                <p>Your Tasks:</p>
+                <p>
+                <b>Your Tasks:</b>
+                </p>
                 {checkList.map((check, index) => {
                     return (
                         <div>
-                            {check.message} &nbsp; {check.date}
+                            Event: {check.message}, &nbsp; Date: {check.date}
                             &nbsp;
                             <button className="remove" onClick={() => removeList(index)}>x</button>
                         </div>
