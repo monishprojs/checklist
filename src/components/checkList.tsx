@@ -16,12 +16,14 @@ function CheckList() {
         let addBox = document.getElementById('add') as HTMLInputElement | null;
         if (addBox != null) {
             let item = addBox.value;
-            setList(checkList => [...checkList, item]);
+            if (item != "") {
+                setList(checkList => [...checkList, item]);
+            }
         }
     }
 
     function removeList(index: number) {
-        setList(checkList => [...checkList.slice(0, index), ...checkList.slice(1, index)]);
+        setList(checkList => [...checkList.splice(index, 1)]);
     }
 
     return (
