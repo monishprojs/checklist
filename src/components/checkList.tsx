@@ -21,7 +21,7 @@ function CheckList() {
     }
 
     function removeList(index: number) {
-        setList(checkList => [...checkList.slice(index)]);
+        setList(checkList => [...checkList.slice(0, index), ...checkList.slice(1, index)]);
     }
 
     return (
