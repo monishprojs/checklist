@@ -23,7 +23,9 @@ function CheckList() {
     }
 
     function removeList(index: number) {
-        setList(checkList => [...checkList.splice(index, 1)]);
+        let placeholder = [...checkList];
+        placeholder.splice(index, 1);
+        setList(placeholder);
     }
 
     return (
