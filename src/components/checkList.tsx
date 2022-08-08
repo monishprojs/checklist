@@ -36,9 +36,10 @@ function CheckList() {
         <div>
             <div className="functions">
                 <TextField type="text" id="add" variant="filled" label="Event" className="subject" onKeyDown={enter} />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span className='spacer'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <br className='spacerMobile'/>
+                <br className='spacerMobile' />
                 <TextField type="text" id="date" variant="filled" label="Date (Optional)" className="subject" onKeyDown={enter} />
-                &nbsp;
             </div>
             <div className='submit'>
                 <Button variant="contained" onClick={addList} >Add</Button>

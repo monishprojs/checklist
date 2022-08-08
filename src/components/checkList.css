@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.spacerMobile {
+    display: none;
+}
+
 .submit {
     margin-top: 5vh;
     text-align: center;
@@ -19,4 +23,14 @@
 
 .remove:hover {
     color: darkslateblue;
+}
+
+@media(max-width: 480px) {
+    .spacer {
+        display: none;
+    }
+
+    .spacerMobile {
+        display: block;
+    }
 }
