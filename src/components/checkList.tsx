@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 
 
 function CheckList() {
-    const [checkList, setList] = useState([{ message: "Follow monishprojs on GitHub", date: "today" }]);
+    const [checkList, setList] = useState([{ message: "Follow monishprojs on GitHub", date: "Today" }]);
 
     function enter(key: any) {
         if (key.key === 'Enter') {
@@ -36,10 +36,12 @@ function CheckList() {
         <div>
             <div className="functions">
                 <TextField type="text" id="add" variant="filled" label="Event" className="subject" onKeyDown={enter} />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <TextField type="text" id="date" variant="filled" label="Date (Optional)" className="subject" onKeyDown={enter} />
                 &nbsp;
-                <TextField type="text" id="date" variant="filled" label="Date" className="subject" onKeyDown={enter} />
-                &nbsp;
-                <Button variant="contained" onClick={addList} className="submit">Add</Button>
+            </div>
+            <div className='submit'>
+                <Button variant="contained" onClick={addList} >Add</Button>
             </div>
             <div className="list">
                 <p>
@@ -51,6 +53,7 @@ function CheckList() {
                             Event: {check.message}, &nbsp; Date: {check.date}
                             &nbsp;
                             <button className="remove" onClick={() => removeList(index)}>x</button>
+                            <br /><br />
                         </div>
                     );
                 })}

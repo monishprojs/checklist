@@ -6,16 +6,9 @@
     text-align: center;
 }
 
-.subject {}
-
 .submit {
-    color: white;
-    background-color: rgb(97, 219, 251);
-    margin-top: 30px;
-}
-
-.submit:hover {
-    background-color: darkslateblue;
+    margin-top: 5vh;
+    text-align: center;
 }
 
 .remove {
