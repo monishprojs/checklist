@@ -1,15 +1,17 @@
 body {
     background-color: lightblue;
-    color: black;
+    color: white;
 }
 
 .title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .divider {
     height: 0.2rem;
-    color: black;
-    background-color: black;
+    color: white;
+    ;
+    background-color: white;
+    ;
 }

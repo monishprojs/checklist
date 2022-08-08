@@ -1,28 +1,47 @@
-.functions {
+.content {
     text-align: center;
-}
-
-.list {
-    text-align: center;
+    font: Arial;
 }
 
 .spacerMobile {
     display: none;
 }
 
-.submit {
+.subject {
+    background-color: white;
+    color: black;
+}
+
+.submitField {
     margin-top: 5vh;
-    text-align: center;
+}
+
+.list {
+    display: inline-block;
+}
+
+.item {
+    background-color: white;
+    color: black;
+    align-items: center;
+    height: 2rem;
+    min-height: fit-content;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
 }
 
 .remove {
+    height: 2rem;
+    width: 2rem;
     color: red;
-    background: none;
+    background-color: orange;
     border: none;
 }
 
 .remove:hover {
-    color: darkslateblue;
+    background-color: darkred;
 }
 
 @media(max-width: 480px) {
@@ -32,5 +51,14 @@
 
     .spacerMobile {
         display: block;
+    }
+
+    .item {
+        height: 3em;
+    }
+
+    .remove {
+        height: 3rem;
+        width: 3rem;
     }
 }

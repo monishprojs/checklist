@@ -33,16 +33,16 @@ function CheckList() {
     }
 
     return (
-        <div>
+        <div className="content">
             <div className="functions">
-                <TextField type="text" id="add" variant="filled" label="Event" className="subject" onKeyDown={enter} />
+                <TextField type="text" id="add" variant="outlined" label="Event" className="subject" onKeyDown={enter} />
                 <span className='spacer'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <br className='spacerMobile'/>
                 <br className='spacerMobile' />
-                <TextField type="text" id="date" variant="filled" label="Date (Optional)" className="subject" onKeyDown={enter} />
+                <TextField type="text" id="date" variant="outlined" label="Date (Optional)" className="subject" onKeyDown={enter} />
             </div>
-            <div className='submit'>
-                <Button variant="contained" onClick={addList} >Add</Button>
+            <div className='submitField'>
+                <Button className='submit' variant="contained" onClick={addList} >Add</Button>
             </div>
             <div className="list">
                 <p>
@@ -50,11 +50,10 @@ function CheckList() {
                 </p>
                 {checkList.map((check, index) => {
                     return (
-                        <div>
+                        <div className="item">
                             Event: {check.message}, &nbsp; Date: {check.date}
                             &nbsp;
                             <button className="remove" onClick={() => removeList(index)}>x</button>
-                            <br /><br />
                         </div>
                     );
                 })}
