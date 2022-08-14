@@ -1,3 +1,6 @@
+Desktop Screenshot:
+![alt text](https://github.com/monishprojs/checklist/blob/8a957d8cce0704eade66c2015d4b12a6cad4675d/checkdesktop.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
